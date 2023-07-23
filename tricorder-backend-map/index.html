@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <style>
+      .map {
+        width: 100%;
+        height: 100%;
+	position: absolute;
+      }
+      .rotate-north {
+        top: 65px;
+        left: .5em;
+      }
+      .ol-touch .rotate-north {
+        top: 80px;
+      }
+
+      .map-on {
+        top: 100px;
+        left: .5em;
+      }
+      .ol-touch .map-on {
+        top: 100px;
+      }
+
+
+      .transmitter {
+        top: 130px;
+        left: .5em;
+      }
+      .ol-touch .transmitter {
+        top: 130px;
+      }
+
+
+      .button_selected {
+              background-color: red;
+}
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="info" style="display: none;"></div>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
